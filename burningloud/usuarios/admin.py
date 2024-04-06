@@ -9,7 +9,7 @@ class UsuarioAdmin(admin.ModelAdmin):
     # Otros ajustes opcionales según tus necesidades
     
 @admin.register(Direccion)
-class UsuarioAdmin(admin.ModelAdmin):
+class DireccionAdmin(admin.ModelAdmin):
     # Define los campos que deseas mostrar en el panel de administración
     list_display = ('id_usuario', 'calle', 'numero', 'piso', 'codigo_postal', 'ciudad','pais')
     # Otros ajustes opcionales según tus necesidades

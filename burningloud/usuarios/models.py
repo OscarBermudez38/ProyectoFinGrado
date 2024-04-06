@@ -7,6 +7,8 @@ class Usuario(models.Model):
     tlf = models.CharField(max_length=9)  
     ciudad = models.CharField(max_length=50)
     pais = models.CharField(max_length=50)
+    def __str__(self):
+        return self.nombre
 
 class Direccion(models.Model):
     id_usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)  # Relación con el modelo Usuario
