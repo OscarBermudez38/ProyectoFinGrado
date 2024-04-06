@@ -20,7 +20,7 @@ class Producto(models.Model):
     
     id_categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)  # Relación con el modelo Usuario
     nombre = models.CharField(max_length=100)
-    imagen= models.ImageField(upload_to='media/productos')
+    imagen= models.ImageField(upload_to='productos/media')
     color = models.CharField(max_length=50)
     talla = models.CharField(max_length=2, choices=TALLAS)
     fecha_salida = models.DateField(auto_now_add=True)
