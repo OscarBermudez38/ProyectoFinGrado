@@ -1,4 +1,0 @@
-Usamos Django js bootstapp
-
-bibliotecas Django,Pillow
-
